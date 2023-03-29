@@ -3,3 +3,4 @@ if [[ -d ~/.emacs.d ]]; then
 fi
 
 cp .emacs ~/
+cp .dot_files
