@@ -1,6 +1,10 @@
+EMACS_CONF_DEST=~/.emacs.d
+
 if [[ -d ~/.emacs.d ]]; then
-  rm -rd ~/.emacs.d
+  rm -rd $EMACS_CONF_DEST
 fi
 
-cp .emacs ~/
-cp .dot_files
+mkdir $EMACS_CONF_DEST
+
+cp init.el $EMACS_CONF_DEST
+# cp .dot_files
